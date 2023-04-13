@@ -34,7 +34,7 @@ const refs = {
   refs.start.addEventListener('click', () => {
     colorChanger.start();
   });
-  
+  refs.stop.disabled = true;
   refs.stop.addEventListener('click', () => {
     colorChanger.stop();
   });

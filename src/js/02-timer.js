@@ -27,9 +27,10 @@ const options = {
       startBtn.disabled = true;
       Notiflix.Notify.failure('Please choose a date in the future');
     } else {
-      startBtn.disabled = false;
-
-      startBtn.addEventListener('click', countdownTime);
+      startBtn.disabled = false;  
+  
+};
+startBtn.addEventListener('click', countdownTime);
 
       // time counter
 
@@ -78,7 +79,5 @@ const options = {
         return { days, hours, minutes, seconds };
       }
     }
-  },
-};
-
+    }
 flatpickr(dateChosen, options);
